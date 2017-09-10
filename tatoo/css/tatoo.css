@@ -1,0 +1,96 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+height: 100%;
+margin: 0;
+background-image:url(../img/fondo2.jpg);
+font-family: ARIAL;
+background-attachment: fixed;
+background-size: cover;
+}
+header{
+width: 100%;
+height: 40px;
+padding: 40px;
+align-items: center;
+justify-content:space-between;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: black;
+opacity: 0.7;
+
+}
+header .logo-header{
+font-size: 20px;
+color: #ffffff;
+text-decoration: none;
+margin-right: 20px;
+font-family: MathJax-Caligraphic;
+font-style: italic;
+border: 2px double #ffffff;
+border-radius: 50%;
+}
+header .menu a{
+font-style: bold;
+font-size: 25px;
+color: #ADA8A8;
+text-decoration: none;
+margin-right: 20px;
+}
+header .menu a:hover{
+font-size: 30px;
+font-weight: bold;
+color: #ffffff;
+}
+.contcajas{
+margin: 100px 10px 10px 10px;
+justify-content: center;
+height: 500px;
+/*background: #212d40;*/
+display: flex;
+flex-wrap: wrap;
+align-items: space-between;
+opacity: 0.9;
+}
+.caja {
+	
+	border-radius: 50%;
+	opacity: 1.0;
+align-items:stretch;
+width: 200px;
+/*height: 100px;*/
+background:#ADA8A8;
+text-align: center;
+margin: 10px;
+padding: 10px;
+font-size: 40px;
+color: #fff;
+}
+.caja a img{
+width: 180px;
+height: 460px;
+
+}
+.caja a{
+opacity: 0.6;
+}
+.caja a:hover{
+opacity: 1.0;
+zoom: 1;
+/*font-weight: bold;*/
+}
+footer{
+	padding: 0px 0px 0px 600px;
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	opacity: 0.7;
+	justify-content: space-between;
+	
+}
+
+
