@@ -7,7 +7,7 @@ body{
 height: 100%;
 margin: 0;
 background-image:url(../img/fondo2.jpg);
-font-family: ARIAL;
+font-family: 'Sancreek', cursive;
 background-attachment: fixed;
 background-size: cover;
 }
@@ -24,18 +24,17 @@ background-color: black;
 opacity: 0.7;
 
 }
+
 header .logo-header{
 font-size: 20px;
 color: #ffffff;
 text-decoration: none;
 margin-right: 20px;
-font-family: MathJax-Caligraphic;
-font-style: italic;
+font-style: italic;*/
 border: 2px double #ffffff;
 border-radius: 50%;
 }
 header .menu a{
-font-style: bold;
 font-size: 25px;
 color: #ADA8A8;
 text-decoration: none;
@@ -46,6 +45,7 @@ font-size: 30px;
 font-weight: bold;
 color: #ffffff;
 }
+
 .contcajas{
 	
 margin: 100px 10px 10px 10px;
