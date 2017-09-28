@@ -1,0 +1,351 @@
+*{
+margin:0px;
+padding:1px;
+box-sizing: border-box;
+}
+
+body{
+height: 100%;
+margin: 0;
+background-image:url(../img/fondo2.jpg);
+font-family: 'Sancreek', cursive;
+background-attachment: fixed;
+background-size: cover;
+}
+/**************menu por Tam*********/
+header{
+	margin-bottom: 50px;
+}
+
+header nav.menu {
+	position: fixed;
+	z-index: 1;
+	height: 80px;
+	width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+   
+}
+header nav.menu .menu_{
+	text-align: center;
+}
+header nav.menu .menu_ a,p{
+    margin: 15px 40px;
+    font-size: 20pt;
+    display: inline-block;
+	color: white;
+	text-decoration: none;	
+}
+
+header nav.menu .ham{
+        position: fixed;
+        margin: 5px 100px;
+        
+}
+header nav.menu .mobile{
+	display: none;
+}
+
+/* CAJALOGO (Mila)*/
+header .contlogo img{
+	width: 500px;
+	height: 500px;
+	margin-top: 100px;
+	background-color: #000000;
+	border-radius: 100%;
+	margin-left: 500px;
+}
+
+/*************ARTISTAS(MILA)***************/
+.contcajas{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contcajas img{
+	width: 300px;
+	height: 300px;
+	padding: 0px 50px;
+	border-radius: 100%;
+}
+
+.caja a{
+opacity: 0.6;
+}
+
+.caja a:hover{
+	opacity: 1.0;
+    zoom: 1;
+
+}
+
+/****************ESTUDIO*VIDEODIVS******************/
+
+section .videodivs{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section .main {
+	/*margin-left: 180px;*/
+	width:100%;
+	max-width:1000px;
+}
+
+section .main .slides {
+	width:100%;
+}
+ 
+section .main .slides img {
+	z-index: -1;
+	width: 940px;
+	height: 528px;
+}
+ 
+.slidesjs-pagination {
+	background:#424242;
+	list-style:none;
+	overflow:hidden;
+}
+ 
+.slidesjs-pagination li {
+	float:left;
+}
+ 
+.slidesjs-pagination li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	text-decoration:none;
+}
+ 
+.slidesjs-pagination li a:hover {
+	background:#000;
+}
+
+.slides .active {
+	background:#000;
+}
+ 
+.slidesjs-navigation{
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:13.5px 20px;
+	float:right;
+	
+}
+/************ESTUDIO*******a editar******************/
+/*
+h{
+	
+}
+p{
+	
+}
+*
+*
+*
+
+
+*/
+
+
+/**********************FORMULARIO******************/
+
+
+form h1 {
+font-family: 'Sancreek', cursive;
+border: 2px solid white;
+
+	/*padding: 10px;
+	height: 600px;
+	width: 98%;*/
+	
+/*background-color: #ADA8A8;*/
+margin: 0 auto;
+
+}
+form .datos-personales{
+font-family:  'Montserrat', sans-serif;
+font-size: 16px;
+width: 100%;
+height: 50px;
+}
+
+form .calendar{
+	font-family: 'Sancreek', cursive;
+	font-size: 15px;
+}
+
+form .comentarios{
+	margin-top: 5px;
+}
+form .cuadrotexto{
+	/*height:200px;*/
+	background-color: silver;
+	/*width: 350px;*/
+/*	height: 200px;
+	font-size: 16px;*/
+	font-family:  'Montserrat', sans-serif;
+	/*float: right;*/
+}
+form #algo-que-seleccione{
+	font-family: helvetica;
+	font-size: 15px;
+	background:#dddddd;
+	color: black;
+	width: 50%;
+	/*font-family:  'Montserrat', sans-serif;*/
+}
+
+
+
+button{
+	float: right;
+	
+	margin:0px 5px 10px 0px;
+
+}
+aside{
+ 	
+ 	/*background-color: silver;*/
+ 	/*height: 400px;*/
+ }
+ aside p {
+ 	font-family: helvetica;
+ 	font-size:14px;
+ }
+form{
+	border-right: 1px solid black;
+/* 	border: 1px solid green;*/
+ }
+   iframe { 
+ max-width:100%
+ height: auto;
+  }
+
+#sectform{
+ 	background-color: white; 
+ 	color:black;
+ 	/*border:3px solid pink;*/
+ }
+
+#datos {
+margin-top: 145px;
+display: inline-block;
+}
+
+/*************************FOOTER***JACQUE********************/
+
+footer #containerFooter {
+	background-color: #5E5B5B;
+	margin: 0 auto;
+	padding: 15px;
+	width: 100%;
+}
+footer .social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+footer .social {
+	
+     -webkit-transform: scale(0.8); 
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+     color: black;
+  }
+
+footer #social-fb:hover {
+     color: #3B5998;
+ }
+ footer #social-tw:hover {
+     color: #4099FF;
+ }
+footer  #social-gp:hover {
+     color: #d34836;
+ }
+footer #social-em:hover {
+     color: #f39c12;
+ }
+
+footer .columnas {
+	display: inline-block; 
+	text-align: left;
+}
+
+footer .columnas a {
+	text-decoration: none;
+	/*float;left: */
+	color: black;
+}
+
+footer .afip {
+	display: inline-block;
+	float: center;
+	margin-right: 5px;
+	/*padding-right: 15px;*/
+}
+
+footer .footer:hover {
+     -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+     -o-transform: scale(0.9);
+}
+footer .footer {
+	padding-bottom: 10px;
+	width: 50%;
+     -webkit-transform: scale(0.8); 
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+     -o-transition-duration: 0.3s;
+	display: inline-block; 
+}
+footer .footer ul {
+	font-size: 20px;
+	list-style-type: none;
+	margin-top: 10px; 
+	color: #F5F5F5;
+}
+
+footer .footer a {
+	color: black;
+	text-decoration: none;
+}
+
+footer .footer a:hover {
+	color: rgba(255,255,255,0.5);
+}
+
+ .copyright{
+    background-color:black;
+}
+
+.copyright p{
+    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    padding:15px 0 10px ;
+    margin: 0 auto;
+    color: #676464;
+    font-size: 15px;
+    text-align: center;
+}
+
+ 
+/***MEDIA QUERY*******************/
+
+@media (max-width:800px){
+ form {border-right: none;
+ 	} 
+ }
+  
