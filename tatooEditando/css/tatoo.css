@@ -1,6 +1,6 @@
 *{
 margin:0px;
-padding:1px;
+padding:0px;
 box-sizing: border-box;
 }
 
@@ -8,9 +8,16 @@ body{
 height: 100%;
 margin: 0;
 background-image:url(../img/fondo2.jpg);
-font-family: 'Sancreek', cursive;
 background-attachment: fixed;
 background-size: cover;
+}
+h1, a{
+	font-family: 'Sancreek', cursive;
+}
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
 }
 /**************menu por Tam*********/
 header{
@@ -19,7 +26,7 @@ header{
 
 header nav.menu {
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	height: 80px;
 	width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -119,12 +126,14 @@ section .main .slides img {
 .slidesjs-pagination li a {
 	display:block;
 	padding:10px 20px;
-	color:#fff;
+	color:white;
 	text-decoration:none;
+
 }
  
 .slidesjs-pagination li a:hover {
-	background:#000;
+	background:000;
+	color: white;
 }
 
 .slides .active {
@@ -134,7 +143,7 @@ section .main .slides img {
 .slidesjs-navigation{
 	background:#000;
 	color:#fff;
-	text-decoration:none;
+	text-decoration: none;
 	display:inline-block;
 	padding:13.5px 20px;
 	float:right;
@@ -142,37 +151,36 @@ section .main .slides img {
 }
 /************ESTUDIO*******a editar******************/
 /*
-h{
-	
-}
 p{
 	
 }
 *
 *
 *
-
-
 */
+h1 {
+	color:white;
+	text-decoration:none;
+	list-style-type: none;
+} 
+
 
 
 /**********************FORMULARIO******************/
-
-
-form h1 {
+#sectform {
+	padding:30px 0 30px 0px;
+	margin: 20px 20px 20px 20px;
+}
+form {
+	padding-bottom: 30px;
+}
+h2 {
 font-family: 'Sancreek', cursive;
-border: 2px solid white;
-
-	/*padding: 10px;
-	height: 600px;
-	width: 98%;*/
-	
-/*background-color: #ADA8A8;*/
-margin: 0 auto;
+color: black;
 
 }
 form .datos-personales{
-font-family:  'Montserrat', sans-serif;
+font-family:'Montserrat', sans-serif;
 font-size: 16px;
 width: 100%;
 height: 50px;
@@ -208,27 +216,40 @@ form #algo-que-seleccione{
 
 button{
 	float: right;
-	
 	margin:0px 5px 10px 0px;
-
 }
-aside{
- 	
- 	/*background-color: silver;*/
- 	/*height: 400px;*/
- }
- aside p {
- 	font-family: helvetica;
- 	font-size:14px;
- }
-form{
-	border-right: 1px solid black;
-/* 	border: 1px solid green;*/
- }
-   iframe { 
+
+.btn-default {
+	background-color: grey;
+	color: white;
+}
+.btn-clear {
+	background-color: darkgrey;
+	color: white;
+}
+/**********************UBICACION*******************/
+
+.ubicacion{
+	padding-left: 15px;
+}
+.mapa{
+	margin-left: 15px;
+}
+ iframe { 
  max-width:100%
  height: auto;
-  }
+ }
+
+ aside p {
+ 	font-family: helvetica;
+ 	font-size:15px;
+ 	color: black;
+}
+
+form{
+	border-right: 1px solid black;
+
+ }
 
 #sectform{
  	background-color: white; 
@@ -236,18 +257,13 @@ form{
  	/*border:3px solid pink;*/
  }
 
-#datos {
-margin-top: 145px;
-display: inline-block;
-}
+
 
 /*************************FOOTER***JACQUE********************/
 
 footer #containerFooter {
-	background-color: #5E5B5B;
-	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.7);
 	padding: 15px;
-	width: 100%;
 }
 footer .social:hover {
      -webkit-transform: scale(1.1);
@@ -262,7 +278,9 @@ footer .social {
      -webkit-transition-duration: 0.5s;
      -moz-transition-duration: 0.5s;
      -o-transition-duration: 0.5s;
-     color: black;
+     color: white;
+     margin-top: 30px;
+     margin-left: 30px;
   }
 
 footer #social-fb:hover {
@@ -280,7 +298,7 @@ footer #social-em:hover {
 
 footer .columnas {
 	display: inline-block; 
-	text-align: left;
+	text-align: center;
 }
 
 footer .columnas a {
@@ -288,12 +306,10 @@ footer .columnas a {
 	/*float;left: */
 	color: black;
 }
-
-footer .afip {
-	display: inline-block;
-	float: center;
-	margin-right: 5px;
-	/*padding-right: 15px;*/
+.afip img{
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
 }
 
 footer .footer:hover {
@@ -303,7 +319,6 @@ footer .footer:hover {
 }
 footer .footer {
 	padding-bottom: 10px;
-	width: 50%;
      -webkit-transform: scale(0.8); 
      -moz-transform: scale(0.8);
      -o-transform: scale(0.8);
@@ -315,12 +330,12 @@ footer .footer {
 footer .footer ul {
 	font-size: 20px;
 	list-style-type: none;
-	margin-top: 10px; 
+	margin-top: 25px; 
 	color: #F5F5F5;
 }
 
 footer .footer a {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -333,13 +348,13 @@ footer .footer a:hover {
 }
 
 .copyright p{
-    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     padding:15px 0 10px ;
     margin: 0 auto;
     color: #676464;
     font-size: 15px;
     text-align: center;
 }
+
 
  
 /***MEDIA QUERY*******************/
