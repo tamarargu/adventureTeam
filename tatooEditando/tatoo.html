@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="css/tatoo.css">
 		<link href="https://fonts.googleapis.com/css?family=Sancreek" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href="Fonts/css/font-awesome.min.css" rel="stylesheet">
 		<meta charset="UTF-8">
 			
@@ -15,27 +17,33 @@
 			<div class="container-fluid">
 <!--******************MENU**************************-->
 			<header>
-			
+				
 				<nav class="menu">
 					<div class="mobile">
-						<img class="logo_" src="img/estilostatoo/AdventureTeam.png" alt="logo">
-						<img class="ham" src="img/ico/menu.png" alt="menu"> 
+						<img class="logo_" src="img/estilostatoo/logo.png" alt="logo">
+						<div class="btn-group">
+							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							Menú <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#Artistas">Artistas</a></li>
+								<li><a href="#Estudio">Estudio</a></li>
+								<li><a href="#FAQS">FAQS</a></li>
+								<li><a href="#Contacto">Contacto</a></li></ul>
+							</div>
+						</div>
+						<div class="menu_">
+							<a href="#Artistas">ARTISTAS</a>
+							<p>│</p>
+							<a href="#Estudio">ESTUDIO</a>
+							<p>│</p>
+							<a href="#FAQS">FAQS</a>
+							<p>│</p>
+							<a href="#Contacto">CONTACTO</a>
+						</div>
+					</nav>
 					
-					</div>
-					<div class="menu_">
-					<a href="#Estudio">ESTUDIO</a>
-					<p>│</p>
-					<a href="#Artistas">ARTISTAS</a>
-					<p>│</p>
-					<a href="#FAQS">FAQS</a>
-					<p>│</p>
-					<a href="#Contacto">CONTACTO</a>
-				</div>
-				</nav>
-				<div class="contlogo">
-					<img src="img/estilostatoo/AdventureTeam.png" alt="logo">
-				</div>
-			</header>
+				</header>
 <!--***********************ARTISTAS***************************-->
 			<a name="Artistas"></a>
 			<section class="contcajas">
