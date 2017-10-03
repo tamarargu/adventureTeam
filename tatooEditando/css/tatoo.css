@@ -204,10 +204,12 @@ form #algo-que-seleccione{
 	background:#dddddd;
 	color: black;
 	width: 50%;
-	/*font-family:  'Montserrat', sans-serif;*/
 }
 
-
+.claselabel{
+	font-family: 'Sancreek', cursive;
+	font-size: 15px;
+}
 
 button{
 	float: right;
@@ -223,22 +225,24 @@ button{
 	color: white;
 }
 /**********************UBICACION*******************/
-
-.ubicacion{
-	padding-left: 15px;
-}
-.mapa{
+#ubicamos h2{
 	margin-left: 15px;
 }
- iframe { 
- max-width:100%
- height: auto;
+.mapa iframe{
+
+ max-width:85%;
+ /*height: auto;*/
+ margin-left: 30px;
+
  }
 
- aside p {
+.info-ubi ul{
+	list-style: none;
  	font-family: helvetica;
- 	font-size:15px;
+ 	line-height: 30px;
+ 	font-size: 15px;
  	color: black;
+ 	margin-left: 700px;
 }
 
 form{
@@ -249,7 +253,11 @@ form{
 #sectform{
  	background-color: white; 
  	color:black;
- 	/*border:3px solid pink;*/
+ 	/*-webkit-order: ;
+ 	-moz-order: ;
+ 	-ms-order: ;
+ 	-o-order: ;
+ 	order: ;er:3px solid pink;*/
  }
 
 
