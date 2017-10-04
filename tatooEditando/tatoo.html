@@ -5,9 +5,10 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/tatoo.css">
 		<link href="https://fonts.googleapis.com/css?family=Sancreek" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="jquery/jquery.datetimepicker.css"/>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<script src="jquery/jquery-3.2.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<link href="Fonts/css/font-awesome.min.css" rel="stylesheet">
 		<meta charset="UTF-8">
 		
@@ -68,10 +69,10 @@
 					</article>
 				</section>
 <!--**************ESTUDIO****************************-->
-				<section class="videodivs">
-					<a name="galeria">
-						<div class="main">
-							<div class="slides">
+				<section class="row videodivs">
+					<a name="galeria"></a>
+						<div class="col-xs-12 col-md-12 main">
+							<div class="center-block slides">
 								<img src="img/a.jpg" alt="">
 								<img src="img/b.jpg" alt="">
 								<img src="img/c.jpg" alt="">
@@ -85,16 +86,23 @@
 								<img src="img/k.jpg" alt="">
 								<img src="img/l.jpg" alt="">
 							</div>
-							<div id="infovideo">
-								<h1>INFO</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit magni, debitis ducimus, sed sunt dolores repellendus, sint laborum voluptatum veritatis libero rerum maiores placeat omnis sit esse. Facere error, consectetur.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nisi, quas modi velit! Similique dolorum ea architecto, sed nemo aperiam magnam, molestias, nam ipsa consequatur enim quam consequuntur, perspiciatis assumenda.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sint illum harum, suscipit deserunt magnam. Provident sit assumenda, sint quam nobis dicta eveniet laborum dolorem maxime doloribus natus sequi pariatur!</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aut dolore itaque, dolores maxime iure illum sit rerum quae quasi, voluptatem, soluta, ut aperiam a sapiente doloribus? Porro veritatis, velit.</p>
-							</div>
-							
-						</section>
-						<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+						</div>		
+											
+					</section>
+				<section class="infoestudio">
+								
+						<p>Adventure Tattoo es un estudio de tatuajes con mas de 15 años de experiencia situado en la galeria Bond Street, en el barrio de Recoleta.</p>
+						<p>Siempre a la vanguardia de nuevas técnicas y priorizando la salud e higiene de nuestro trabajo.<br>
+						Podes ver nuestro amplio catálogo de tatuajes de todo tipo o háblanos de tu idea y nuestros artistas se encargarán de diseñar, personalizar y realizar el diseño.
+						</p>
+						<p>Los pigmentos utilizados en los tatuajes cumplen la normativa vigente en materia de productos cosméticos y disponen del correspondiente registro sanitario.
+						Nuestro local posee la licencia municipal precedida de la emisión por la autoridad sanitaria competente de un informe sanitario.</p>
+								
+				</section>
+
+						<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js">
+						</script> reemplazado por la version 3.2.1 -->
+						<script type="text/javascript" scr="jquery/jquery-3.2.1.min.js"></script>
 						<script src="js/jquery.slides.js"></script>
 						<script>
 							$(function(){
@@ -147,7 +155,7 @@
 										<h3 class="calendar">Selecciona tu turno</h3>
 										<input type="text" value="" id="datetimepicker"/>
 									</div>
-									<div class="col-xs-12 col-sm-6 comentarios"><textarea  class="form-control cuadrotexto" rows="8	" name="" id="">Comentarios</textarea>
+									<div class="col-xs-12 col-sm-6 comentarios"><textarea  class="form-control cuadrotexto" rows="8" placeholder="comentarios"></textarea>
 									</div>
 								</div>
 								<br>
@@ -176,7 +184,7 @@
 						<div id="ubicamos" class="row">
 							<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 								<h2>DONDE NOS UBICAMOS</h2>
-							</div>
+							
 								<div class="mapa">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.3210234341764!2d-58.391382!3d-34.596043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x981f9d481d941910!2sBond+Street!5e0!3m2!1ses-419!2sar!4v1507065174444" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
@@ -190,7 +198,7 @@
 								
 								</div>
 							</div>
-						</div>
+						
 							</section>
 <!--***********************************FOOTER*********************************************-->
 						<footer class="container-fluid">
@@ -220,15 +228,14 @@
 						</div>
 					</body>
 					<!--***************SCRIP*CALENDARIO**********************-->
-					<!--*Arreglar script entra en conflito con el slider**-->
-					<!-- <script src="./jquery.js"></script>
-					<script src="build/jquery.datetimepicker.full.js"></script>
+					<!-- <script src="jquery/jquery.js"></script> este script entra en conflcito con el slider -->
+					<script src="jquery/build/jquery.datetimepicker.full.js"></script>
 					<script>/*
 					window.onerror = function(errorMsg) {
 						$('#console').html($('#console').html()+'<br>'+errorMsg)
 					}*/
 					$.datetimepicker.setLocale('en');
-					$('#datetimepicker_format').datetimepicker({value:'2015/04/15 05:03', format: $("#datetimepicker_format_value").val()});
+					$('#datetimepicker_format').datetimepicker({value:'2017/10/04 05:03', format: $("#datetimepicker_format_value").val()});
 					console.log($('#datetimepicker_format').datetimepicker('getValue'));
 					$("#datetimepicker_format_change").on("click", function(e){
 						$("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({format: $("#datetimepicker_format_value").val()});
@@ -242,7 +249,7 @@
 					disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
 							startDate:	'1986/01/05'
 					});
-					$('#datetimepicker').datetimepicker({value:'2015/04/15 05:03',step:10});
+					$('#datetimepicker').datetimepicker({value:'2017/10/04',step:10});
 					$('.some_class').datetimepicker();
 					$('#default_datetimepicker').datetimepicker({
 						formatTime:'H:i',
@@ -352,4 +359,4 @@
 					});
 					$('#datetimepicker_dark').datetimepicker({theme:'dark'})
 					</script>
-				</html> -->
+				</html>
