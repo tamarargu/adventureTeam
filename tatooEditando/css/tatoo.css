@@ -58,7 +58,26 @@ header .contlogo img{
 }
 
 /*************ARTISTAS(MILA)***************/
-.contcajas{
+
+.tres{
+	width: 100%;
+}
+
+.dos{
+	width: 50%;
+}
+
+#artistas{
+	margin: 150px 100px;
+}
+
+#artistas img{
+	border-radius: 100%;
+	width: 300px;
+	height: 300px;
+}
+
+/*.contcajas{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -69,7 +88,7 @@ header .contlogo img{
 .contcajas img{
 	margin: 80px 20px 20px 20px;
 	/*padding: 0px 20px 20px 0px;*/
-	border-radius: 100%;
+	/*border-radius: 100%;
 	width: 200px;
 	height: 200px;
 }
@@ -86,7 +105,7 @@ opacity: 1.0;
 .galeria img{
 	width: 20px;
 	height: 20px;
-}
+}*/
 
 /****************ESTUDIO*VIDEODIVS******************/
 
