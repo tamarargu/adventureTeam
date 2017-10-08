@@ -48,17 +48,16 @@ header nav.menu .mobile{
 }
 
 /* CAJALOGO (Mila)*/
-header .contlogo img{
+/*header .contlogo img{
 	width: 500px;
 	height: 500px;
 	margin-top: 100px;
 	background-color: #000000;
 	border-radius: 100%;
 	margin-left: 500px;
-}
+}*/
 
 /*************ARTISTAS(MILA)***************/
-
 .tres{
 	width: 100%;
 }
@@ -70,13 +69,63 @@ header .contlogo img{
 #artistas{
 	margin: 150px 100px;
 }
-
+#kat {
+	position: absolute;
+	margin-left: 40px;	
+	margin-top: 100px;
+	opacity: 0;
+}
+#hannah {
+	position: absolute;
+	margin-left: 60px;	
+	margin-top: 100px;
+	opacity: 0;
+}
+#meg {
+	position: absolute;
+	margin-left: 100px;	
+	margin-top: 100px;
+	opacity: 0;
+}
+#chris {
+	position: absolute;
+	margin-left: 100px;	
+	margin-top: 100px;
+	opacity: 0;
+}
 #artistas img{
 	border-radius: 100%;
 	width: 300px;
 	height: 300px;
 }
+#artistas img:hover{
+	-webkit-transition:opacity 0.4s;
+	-moz-transition:opacity 0.4s;
+	opacity:0.2;
+}
+#artistas:hover #kat{
+	opacity: 1;
+	z-index: 20;
+}
+#artistas:hover #hannah{
+	opacity: 1;
+	z-index: 20;
+}
+#artistas:hover #meg{
+	opacity: 1;
+	z-index: 20;
+}
+#artistas:hover #chris{
+	opacity: 1;
+	z-index: 20;
+}
+#artistas a{
+	font-family: 'Sancreek', cursive;
+    text-decoration: none;
+    font-size: 50px;
+    color:black;
 
+}
 /*.contcajas{
 	width: 100%;
 	display: flex;
@@ -120,7 +169,7 @@ section .videodivs{
 }
 
 section .main {
-	margin-left: 300px;
+	margin-left: 200px;
 	width:80%;
 	max-width:1000px;
 	/*text-align: left;*/
@@ -198,6 +247,11 @@ section h2{
 	padding:30px 0 30px 0px;
 	margin: 0px 10px 20px 10px;
 }
+.infoestudio h2{
+	padding-top: 30px;
+	font-size: 50px;
+	text-align: left;
+}
 form {
 	padding-bottom: 30px;
 }
@@ -261,6 +315,7 @@ button{
 #ubicamos h2{
 	margin-left: 30px;
 }
+
 .mapa iframe{
 
  max-width:85%;
