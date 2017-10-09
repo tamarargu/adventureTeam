@@ -483,4 +483,11 @@ footer .footer a:hover {
 	#calendar{
 		
 	}
+.slidesjs-navigation{
+	display: none ;
+}
+.slidesjs-pagination-item{
+	display: none;
+}
+/*.slidesjs-stop slidesjs-navigation*/
 }
