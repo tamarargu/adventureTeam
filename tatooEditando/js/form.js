@@ -3,8 +3,6 @@ $(document).ready(function(){
 	var ul = "<ul id='error'></ul>"
 	$('#msj').append(ul);
 	
-	
-
 			
 	$('#enviar').on('click',function(event){
 		event.preventDefault();	
@@ -16,7 +14,7 @@ $(document).ready(function(){
 		var comentario=$('#comentario').val();
 		var fecha=$('#datetimepicker').val();
 
-		if(validar(nombre,mail,telefono) == true){
+		if(validar(nombre,mail,telefono,artistas) == true){
 			var datos={
 				"nombre":nombre,
 				"telefono":telefono,
@@ -31,6 +29,23 @@ $(document).ready(function(){
 		
 			
 		}	
+
+		$.ajax({
+	url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
+	type:"post",
+	data:datosformJson,
+	success: function (response) {
+		if(response != false) { 
+			alert ('Turno confirmado')
+		}else{
+			alert('Turno no disponible')
+
+
+		}
+			
+
+	}
+});
 		
 
 });									
@@ -64,8 +79,16 @@ function validarMail(mail){
   return false;
 }
 
+function  validarSelects(valor){
+	if (valor=="0"){
+		return false;
+	}else{
+		return true;
+	}
+}
 
-function validar(nombre,mail,telefono){
+
+function validar(nombre,mail,telefono,artistas){
 	valido=true;
 	if(validarRequeridos(nombre)==false){
 		msg = "<li>El nombre es un campo requerido</li>";
@@ -93,12 +116,12 @@ function validar(nombre,mail,telefono){
 		valido = false;
 
 	}
-	/*if (validarRequeridos(artistas)==false) {
+	if (validarSelects(artistas)==false) {
 		msg="<li>No elegiste artista</li>";
 		$('#error').append(msg);
 		valido = false;
-	}*/
-	
+	}
+
 	/*if (validarRequeridos(comentario)==false) {
 		msg= "<li>comentario es un campo requerido</li>";
 		$('#error').append(msg);
@@ -115,23 +138,8 @@ function validar(nombre,mail,telefono){
 
 }
 
-/*$.ajax({
-	url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
-	type:"post",
-	data:datosformJson,
-	success: function (response) {
-		if(response != false) { 
-			alert ('Turno confirmado')
-		}else{
-			alert('Turno no disponible')
 
 
-		}
-			
-
-	}
-});
-*/
 
 
 
