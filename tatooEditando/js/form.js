@@ -31,14 +31,14 @@ $(document).ready(function(){
 		}	
 
 		$.ajax({
-	url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
-	type:"post",
-	data:datosformJson,
-	success: function (response) {
-		if(response != false) { 
-			alert ('Turno confirmado')
-		}else{
-			alert('Turno no disponible')
+		url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
+		type:"post",
+		data:datosformJson,
+		success: function (response) {
+			if(response != false) { 
+				alert ('Turno confirmado')
+			}else{
+				alert('Turno no disponible')
 
 
 		}
