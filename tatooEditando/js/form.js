@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
-	var ul = $('#error');
+	var ul = "<ul id='error'></ul>"
 	$('#msj').append(ul);
+	
+	
 
-	/*$('#enviar').click(function(){*/
-			//window.location = "index.html?dato="+datosformJson;
-
+			
 	$('#enviar').on('click',function(event){
 		event.preventDefault();	
 
@@ -24,14 +24,11 @@ $(document).ready(function(){
 				"fecha":fecha,
 				"comentario":comentario,
 				"artistas": artistas};
-			
-	
-	
+				
 	
 		var datosformJson= JSON.stringify(datos);
 		console.log(datosformJson);
-			
-			
+		
 			
 		}	
 		
@@ -50,44 +47,91 @@ function validarRequeridos(campo){
 
 		return false;
 	}
-	
 	return true;
 }
+
+function validarMail(mail){
+
+  mail.trim();
+
+  emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+  if(emailRegex.test(mail)){
+
+  	return true;
+  }
+
+  return false;
+}
+
 
 function validar(nombre,mail,telefono){
 	valido=true;
 	if(validarRequeridos(nombre)==false){
 		msg = "<li>El nombre es un campo requerido</li>";
-		ul.append(msg);
+		$('#error').append(msg);
 		valido = false;
 
 	}
 	if(validarRequeridos(mail)==false){
-		msg = "<li>El nombre es un campo requerido</li>";
-		ul.append(msg);
+		msg = "<li>El mail es un campo requerido</li>";
+		$('#error').append(msg);
+		valido = false;
+
+	}else{
+		if(validarMail(mail) == false){
+
+				msg = "<li>Debe ingresar mail valido.</li>";
+				$('#error').append(msg);
+				valido = false;	
+			}
+	}
+
+	if(validarRequeridos(telefono)==false){
+		msg = "<li>El telefono es un campo requerido</li>";
+		$('#error').append(msg);
 		valido = false;
 
 	}
-	if(validarRequeridos(telefono)){
-		msg = "<li>El nombre es un campo requerido</li>";
-		ul.append(msg);
+	/*if (validarRequeridos(artistas)==false) {
+		msg="<li>No elegiste artista</li>";
+		$('#error').append(msg);
+		valido = false;
+	}*/
+	
+	/*if (validarRequeridos(comentario)==false) {
+		msg= "<li>comentario es un campo requerido</li>";
+		$('#error').append(msg);
+		valido = false;
+	}*/
+
+	/*if (validarRequeridos(fecha)==false) {
+		msg= "<li>La fecha es un campo requerido</li>";
+		$('#error').append(msg);
 		valido = false;
 
-	}
+	}*/
 	return valido;
 
 }
 
-$ajax({
-	url:"./",
-	type:post,
+/*$.ajax({
+	url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
+	type:"post",
 	data:datosformJson,
 	success: function (response) {
-		if(response != false) { console.log(response); }
+		if(response != false) { 
+			alert ('Turno confirmado')
+		}else{
+			alert('Turno no disponible')
+
+
+		}
+			
 
 	}
 });
-
+*/
 
 
 
