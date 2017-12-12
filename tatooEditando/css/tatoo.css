@@ -169,7 +169,7 @@ section .videodivs{
 }
 
 section .main {
-	margin-left: 200px;
+	margin-left: 300px;
 	width:80%;
 	max-width:1000px;
 	/*text-align: left;*/
@@ -238,6 +238,7 @@ font-family: Montserrat;
 section h2{
 	color:black;
 	text-decoration:none;
+	margin-left: 50px;
 	
 } 
 
