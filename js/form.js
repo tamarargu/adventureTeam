@@ -23,13 +23,21 @@ $(document).ready(function(){
 				"comentario":comentario,
 				"artistas": artistas};
 				
-	
+	 
 		var datosformJson= JSON.stringify(datos);
 		console.log(datosformJson);
-		
-			
 		}	
 
+		/* si no --> serialize <--
+		var datos = $('#formContacto').serialize();
+		
+		The .serialize() method creates a text string in
+		standard URL-encoded notation. 
+		It can act on a jQuery object that has selected individual form controls, 
+		such as <input>, <textarea>, and <select>: 
+		$( "input, textarea, select" ).serialize();*/
+			
+		
 		$.ajax({
 		url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
 		type:"post",
