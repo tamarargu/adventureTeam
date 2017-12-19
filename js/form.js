@@ -39,7 +39,7 @@ $(document).ready(function(){
 			
 		
 		$.ajax({
-		url:"http://mariabelenalegre.com/adApi/tatoo/addTurno.php",
+		url:"../php/addTurno.php",
 		type:"post",
 		data:datosformJson,
 		success: function (response) {
